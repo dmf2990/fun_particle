@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Drewby's World</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<div id="particles-js">
+<body>
+  <h1 class= "header">Lick my ass</h1>
+  <div id="app"></div>
+  <script src="main.js"></script>
+
+<div class="header" id="videoId">
+    <label>first name</label>
+     <input id="firstNmId"></input>
+     <label>last name</label>
+      <input id="lastNmId"></input>
+     <label>email....</label>
+      <input id="emailId"></input>
+   <label>Yes or No?</label>
+     <select id="booleanId">
+       <option value="thisSavesinVariable">select your option</option>
+       <option value="thisSavesinVariable">Yes</option>
+       <option value="No">No</option>
+     </select>
+     <button onclick="saveNameFunction()">save</button>
+  </div>
+  <button class="header" onclick="hideElementFunction()">hide</button>
+
+ 
+
+
+<!-- this is not my code below -->
+
+
+
+<!-- particles.js container -->
+
+
+<!-- scripts -->
+<script src="background/particles.js"></script>
+<script src="background/app.js"></script>
+
+
+
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+
+</body>
+</div>
+</html>
