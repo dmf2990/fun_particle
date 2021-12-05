@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Drewby's World</title>
+  <title>Druzy's World</title>
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<div id="particles-js">
-<body>
-  <h1 class= "header">Lick my ass</h1>
-  <div id="app"></div>
-  <script src="main.js"></script>
+<header class= "header">
+  <h1 >Druzy's World</h1>
+  <img class= "headerImgCart" src="cartImg.jpg" height="24px" width="24px">
+  <img class= "" src="search.jpg" height="24px" width="28px">
 
-<div class="header" id="videoId">
+</header>
+<body>
+ <script src="main.js"></script>
+<div class = "body" id="videoId">
     <label>first name</label>
      <input id="firstNmId"></input>
      <label>last name</label>
@@ -26,44 +28,7 @@
      </select>
      <button onclick="saveNameFunction()">save</button>
   </div>
-  <button class="header" onclick="hideElementFunction()">hide</button>
-
- 
-
-
-<!-- this is not my code below -->
-
-
-
-<!-- particles.js container -->
-
-
-<!-- scripts -->
-<script src="background/particles.js"></script>
-<script src="background/app.js"></script>
-
-
-
-<script>
-  var count_particles, stats, update;
-  stats = new Stats;
-  stats.setMode(0);
-  stats.domElement.style.position = 'absolute';
-  stats.domElement.style.left = '0px';
-  stats.domElement.style.top = '0px';
-  document.body.appendChild(stats.domElement);
-  count_particles = document.querySelector('.js-count-particles');
-  update = function() {
-    stats.begin();
-    stats.end();
-    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-    }
-    requestAnimationFrame(update);
-  };
-  requestAnimationFrame(update);
-</script>
-
-</body>
-</div>
+  <button class="" onclick="hideElementFunction()">hide</button>
+  </body>
+  <div class="footer"> this is the footer</div>
 </html>
